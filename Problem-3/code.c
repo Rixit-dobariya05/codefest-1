@@ -30,6 +30,7 @@ int main()
                 k=i;
             } 
         }
+        hr=9,mi=30;
         for(i=0;i<k;i++)
         {
             mi=mi+10;
