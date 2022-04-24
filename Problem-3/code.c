@@ -8,7 +8,6 @@ int main()
     value=fopen("input.txt","r");
     output=fopen("output.txt","w");
     fscanf(value,"%d\n",&noc);
-    fprintf(output,"[");
     while(noc!=0)
     {    while(!feof(value))
         {
@@ -42,10 +41,9 @@ int main()
                     hr=1;
             }
         }
-       fprintf(output,"%d,%.2d.%.2d,",ans,hr,mi);
+       fprintf(output,"[%d,%.2d.%.2d]\n",ans,hr,mi);
        noc--;
     }
-    fprintf(output,"]");
     fclose(value);
     fclose(output);
     return 0;
